@@ -33,9 +33,9 @@ public class DAOAnimales {
     public static void eliminarAnimal(int indice) {
         if (indice >= 0 && indice < lanimales.size()) {
             lanimales.remove(indice);
-            System.out.println("Animal eliminado correctamente.");
+            System.out.println("Animal eliminado correctamente");
     } else {
-        System.out.println("Índice no válido. No se pudo eliminar el animal.");
+        System.out.println("No se pudo eliminar el animal");
     }
 }
 }

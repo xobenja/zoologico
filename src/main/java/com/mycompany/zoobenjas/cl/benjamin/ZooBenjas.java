@@ -74,9 +74,9 @@ public class ZooBenjas {
 
                         for (String animal : animalesValidos) {
                             int distancia = StringUtils.getLevenshteinDistance(tipo, animal);
-                            if (distancia <= 1) { // Permitir 1 error en el nombre
+                            if (distancia <= 1) { 
                                 tipoValido = true;
-                                tipo = animal; // Asignar el nombre correcto del animal
+                                tipo = animal; 
                                 break;
                             }
                         }
@@ -93,22 +93,38 @@ public class ZooBenjas {
                     String fechaLlega = scanner.nextLine();
 
                     System.out.println("Que ambiente usa tu animal?");
+                    
+                    
                     String[] ambientesValidos = {"jungla", "amazonas", "pantano", "antartica"};
                     String ambiente;
                     boolean ambienteValido = false;
-                    System.out.println("Jungla");
-                    System.out.println("Amazonas");
-                    System.out.println("Pantano");
-                    System.out.println("Antartica");
-                    ambiente = scanner.nextLine();
+                    do{
+                        System.out.println("Jungla");
+                        System.out.println("Amazonas");
+                        System.out.println("Pantano");
+                        System.out.println("Antartica");
+                        ambiente = scanner.nextLine();
+                            for (String animal : animalesValidos) {
+                                int distancia = StringUtils.getLevenshteinDistance(tipo, animal);
+                                if (distancia <= 1) { 
+                                    tipoValido = true;
+                                    tipo = animal; 
+                                    break;
+                                }
+                            }
+                            if (!ambienteValido) {
+                                System.out.println("Error, este tipo de terreno no existe en nuestra base de datos... ingrese correctamente");
+                            }
+                        } while (!ambienteValido);
 
-                    System.out.println("Que valor comercial tiene?");
-                    int valorCo = scanner.nextInt();
+                        System.out.println("Que valor comercial tiene?");
+                        int valorCo = scanner.nextInt();
+                        scanner.nextLine(); 
 
-                    int id = DAOAnimales.lanimales.size() + 1;
-                    DAOAnimales.agregarAnimal(new Animales(id, nombre, tipo, fechaNac, fechaLlega, ambiente, valorCo));
+                        int id = DAOAnimales.lanimales.size() + 1;
+                        DAOAnimales.agregarAnimal(new Animales(id, nombre, tipo, fechaNac, fechaLlega, ambiente, valorCo));
 
-                    break;
+                        break;
                 case 2:
                     DAOAnimales.listarAnimales();
                     break;
