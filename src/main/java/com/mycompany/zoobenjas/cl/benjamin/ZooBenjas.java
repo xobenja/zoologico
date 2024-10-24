@@ -51,7 +51,7 @@ public class ZooBenjas {
                     String[] animalesValidos = {"mono", "jirafa", "leon", "cocodrilo"};
          
                     String tipo;
-                boolean tipoValido = false;
+                boolean tipoValido = false;//dac<csholaaa
                 do {
                     System.out.println("Que tipo de animal es?");
                     System.out.println("Mono");
