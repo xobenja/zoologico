@@ -5,7 +5,9 @@
 package com.mycompany.zoobenjas.cl.benjamin;
 
 import com.mycompany.zoobenjas.cl.benjamin.DAO.DAOAnimales;
+import com.mycompany.zoobenjas.cl.benjamin.DAO.DAOTratamientos;
 import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Animales;
+import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Tratamientos;
 import java.util.Scanner;
 
 
@@ -33,7 +35,7 @@ public class ZooBenjas {
             System.out.println("1. Agregar Animal");
             System.out.println("2. Listar Animales");
             System.out.println("3. Eliminar Animal");
-            System.out.println("4. ...");
+            System.out.println("4. Tratamientos");
             System.out.println("5. Salir");
             System.out.print("Elija una opcion: ");
           
@@ -86,7 +88,43 @@ public class ZooBenjas {
                     break;
 
                 case 4:
-                    
+                    System.out.println("Que desea realizar");
+                    System.out.println("1. Tratamiento");
+                    System.out.println("2. Listar Tratamientos");
+                    System.out.println("3. Salir");
+                    int opc = scanner.nextInt();
+                    switch (opc) {
+                        case 1:
+                            if (DAOAnimales.lanimales.size()<=0){
+                                System.out.println("Aún no hay animales en el zoologico");
+                                break;
+                            }else
+                                DAOAnimales.listarAnimales();
+                                System.out.println("Eliga el indice del animal que desea realizar el tratamiento");
+                                int indiceTratamiento = scanner.nextInt() - 1;
+                                if (indiceTratamiento < 0 || indiceTratamiento > DAOAnimales.lanimales.size()){
+                                    System.out.println("Ingrese un indice valido");
+                                }else{
+                                    System.out.println("Ingrese la hora del tratamiento EJ: 12:00");
+                                    String hora = scanner.nextLine();
+                                    System.out.println("Ingrese la descripción del tratamiento");
+                                    String descripcion = scanner.nextLine();
+                                    
+                                    DAOTratamientos.agregarTratamiento(new Tratamientos(1, null, hora ,descripcion));
+                                }
+                                    
+                                
+                            
+                            break;
+                        case 2:
+                             DAOTratamientos.listarTratamientos();
+                            break;
+                        case 3:
+                            
+                            break;
+                        default:
+                            throw new AssertionError();
+                    }
                     break;
                 case 5:
                     System.out.println("Saliendo del sistema...");
