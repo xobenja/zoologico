@@ -11,21 +11,21 @@ import java.util.Date;
  * @author benja
  */
 public class Animales {
-    private int idMascota;
+    private int idAnimal;
     private String nombre;
     private String tipoMascota;  
-    private Date fechaNacimiento;
-    private Date fechaLlegada;
+    private String fechaNacimiento;
+    private String fechaLlegada;
     private String ambiente;  
     private double valorComercial;
 
     public Animales(int idMascota) {
-        this.idMascota = idMascota;
+        this.idAnimal = idMascota;
     }
 
     
-    public Animales(int idMascota, String nombre, String tipoMascota, Date fechaNacimiento, Date fechaLlegada, String ambiente, double valorComercial) {
-        this.idMascota = idMascota;
+    public Animales(int idMascota, String nombre, String tipoMascota, String fechaNacimiento, String fechaLlegada, String ambiente, double valorComercial) {
+        this.idAnimal = idMascota;
         this.nombre = nombre;
         this.tipoMascota = tipoMascota;
         this.fechaNacimiento = fechaNacimiento;
@@ -35,11 +35,11 @@ public class Animales {
     }
 
     public int getIdMascota() {
-        return idMascota;
+        return idAnimal;
     }
 
     public void setIdMascota(int idMascota) {
-        this.idMascota = idMascota;
+        this.idAnimal = idMascota;
     }
 
     public String getNombre() {
@@ -58,19 +58,19 @@ public class Animales {
         this.tipoMascota = tipoMascota;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public Date getFechaLlegada() {
+    public String getFechaLlegada() {
         return fechaLlegada;
     }
 
-    public void setFechaLlegada(Date fechaLlegada) {
+    public void setFechaLlegada(String fechaLlegada) {
         this.fechaLlegada = fechaLlegada;
     }
 
@@ -92,7 +92,7 @@ public class Animales {
 
     @Override
     public String toString() {
-        return "Animales{" + "idMascota=" + idMascota + ", nombre=" + nombre + ", tipoMascota=" + tipoMascota + ", fechaNacimiento=" + fechaNacimiento + ", fechaLlegada=" + fechaLlegada + ", ambiente=" + ambiente + ", valorComercial=" + valorComercial + '}';
+        return "Animales{" + "idMascota=" + idAnimal + ", nombre=" + nombre + ", tipoMascota=" + tipoMascota + ", fechaNacimiento=" + fechaNacimiento + ", fechaLlegada=" + fechaLlegada + ", ambiente=" + ambiente + ", valorComercial=" + valorComercial + '}';
     }
     
     public void imprimir(){
