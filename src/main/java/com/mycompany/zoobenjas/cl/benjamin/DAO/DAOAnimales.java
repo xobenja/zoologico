@@ -24,22 +24,12 @@ public class DAOAnimales {
         //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         for (int i = 0; i < lanimales.size(); i++) {
             Animales animal = lanimales.get(i);
-            System.out.print((i+1) + ": "); // Imprime el índice
-            animal.imprimir(); // Imprime la información del animal
+            System.out.print((i+1) + ": "); 
+            animal.imprimir();
     }
     }
     
     
-    /*public static void eliminarAnimal(int id) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        for (int j = lanimales.size() - 1; j > 0; j--) {
-            Animales animales = lanimales.get(j);
-            if (animales.getIdMascota()== id ) {
-                lanimales.remove(j);
-            }
-
-        }
-    } */
     public static void eliminarAnimal(int indice) {
         if (indice >= 0 && indice < lanimales.size()) {
             lanimales.remove(indice);

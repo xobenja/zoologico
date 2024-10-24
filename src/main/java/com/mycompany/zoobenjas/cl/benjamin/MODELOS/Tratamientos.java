@@ -11,40 +11,30 @@ package com.mycompany.zoobenjas.cl.benjamin.MODELOS;
 public class Tratamientos {
     
     
-    private int idTratamiento;
-    private String nombreTratamiento;
+    private int idAnimal;
     private String descripcion;
-    private String fecha;
+    private String horaTratamiento;
 
     public Tratamientos(int idTratamiento) {
-        this.idTratamiento = idTratamiento;
+        this.idAnimal = idAnimal;
     }
 
-    public Tratamientos(int idTratamiento, String nombreTratamiento, String descripcion, String fecha) {
-        this.idTratamiento = idTratamiento;
-        this.nombreTratamiento = nombreTratamiento;
+
+    public Tratamientos(int idAnimal, String descripcion, String hora) {
+        this.idAnimal = idAnimal;
         this.descripcion = descripcion;
-        this.fecha = fecha;
+        this.horaTratamiento = horaTratamiento;
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    
-    
-    
-    public int getIdTratamiento() {
-        return idTratamiento;
+    public int getidAnimal() {
+        return idAnimal;
     }
 
-    public void setIdTratamiento(int idTratamiento) {
-        this.idTratamiento = idTratamiento;
+    public void setidAnimal(int idAnimal) {
+        this.idAnimal = idAnimal;
     }
 
-    public String getNombreTratamiento() {
-        return nombreTratamiento;
-    }
-
-    public void setNombreTratamiento(String nombreTratamiento) {
-        this.nombreTratamiento = nombreTratamiento;
-    }
 
     public String getDescripcion() {
         return descripcion;
@@ -54,17 +44,18 @@ public class Tratamientos {
         this.descripcion = descripcion;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getHoraTratamiento() {
+        return horaTratamiento;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setHoraTratamiento(String horaTratamiento) {
+        this.horaTratamiento = horaTratamiento;
     }
 
+    
     @Override
     public String toString() {
-        return "Tratamientos{" + "idTratamiento=" + idTratamiento + ", nombreTratamiento=" + nombreTratamiento + ", descripcion=" + descripcion + ", fecha=" + fecha + '}';
+        return "Tratamientos{" + "idAnimal=" + idAnimal + "descripcion=" + descripcion + ", fecha=" + horaTratamiento + '}';
     }
     
     public void imprimir(){

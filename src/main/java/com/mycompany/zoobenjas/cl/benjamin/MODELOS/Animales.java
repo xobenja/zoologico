@@ -13,33 +13,35 @@ import java.util.Date;
 public class Animales {
     private int idAnimal;
     private String nombre;
-    private String tipoMascota;  
+    private String tipoAnimal;  
     private String fechaNacimiento;
     private String fechaLlegada;
     private String ambiente;  
     private double valorComercial;
 
-    public Animales(int idMascota) {
-        this.idAnimal = idMascota;
+    public Animales(int idAnimal) {
+        this.idAnimal = idAnimal;
     }
 
+
+
     
-    public Animales(int idMascota, String nombre, String tipoMascota, String fechaNacimiento, String fechaLlegada, String ambiente, double valorComercial) {
-        this.idAnimal = idMascota;
+    public Animales(int idAnimal, String nombre, String tipoAnimal, String fechaNacimiento, String fechaLlegada, String ambiente, double valorComercial) {
+        this.idAnimal = idAnimal;
         this.nombre = nombre;
-        this.tipoMascota = tipoMascota;
+        this.tipoAnimal = tipoAnimal;
         this.fechaNacimiento = fechaNacimiento;
         this.fechaLlegada = fechaLlegada;
         this.ambiente = ambiente;
         this.valorComercial = valorComercial;
     }
 
-    public int getIdMascota() {
+    public int getIdAnimal() {
         return idAnimal;
     }
 
-    public void setIdMascota(int idMascota) {
-        this.idAnimal = idMascota;
+    public void setIdAnimal(int idAnimal) {
+        this.idAnimal = idAnimal;
     }
 
     public String getNombre() {
@@ -50,12 +52,12 @@ public class Animales {
         this.nombre = nombre;
     }
 
-    public String getTipoMascota() {
-        return tipoMascota;
+    public String getTipoAnimal() {
+        return tipoAnimal;
     }
 
-    public void setTipoMascota(String tipoMascota) {
-        this.tipoMascota = tipoMascota;
+    public void setTipoAnimal(String tipoAnimal) {
+        this.tipoAnimal = tipoAnimal;
     }
 
     public String getFechaNacimiento() {
@@ -92,8 +94,10 @@ public class Animales {
 
     @Override
     public String toString() {
-        return "Animales{" + "idMascota=" + idAnimal + ", nombre=" + nombre + ", tipoMascota=" + tipoMascota + ", fechaNacimiento=" + fechaNacimiento + ", fechaLlegada=" + fechaLlegada + ", ambiente=" + ambiente + ", valorComercial=" + valorComercial + '}';
+        return "Animales{" + "idAnimal=" + idAnimal + ", nombre=" + nombre + ", tipoAnimal=" + tipoAnimal + ", fechaNacimiento=" + fechaNacimiento + ", fechaLlegada=" + fechaLlegada + ", ambiente=" + ambiente + ", valorComercial=" + valorComercial + '}';
     }
+
+   
     
     public void imprimir(){
         System.out.println(this.toString());
