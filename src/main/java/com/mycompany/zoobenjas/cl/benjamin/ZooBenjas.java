@@ -107,7 +107,7 @@ public class ZooBenjas {
                             for (String animal : animalesValidos) {
                                 int distancia = StringUtils.getLevenshteinDistance(tipo, animal);
                                 if (distancia <= 1) { 
-                                    tipoValido = true;
+                                    ambienteValido = true;
                                     tipo = animal; 
                                     break;
                                 }
