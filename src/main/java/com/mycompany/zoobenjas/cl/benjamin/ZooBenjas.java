@@ -9,6 +9,8 @@ import com.mycompany.zoobenjas.cl.benjamin.DAO.DAOTratamientos;
 import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Animales;
 import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Tratamientos;
 import java.util.Scanner;
+import org.apache.commons.lang3.StringUtils;
+
 
 
 public class ZooBenjas {
@@ -46,14 +48,31 @@ public class ZooBenjas {
                 case 1:
                     System.out.println("Como se llama su animal?");
                     String nombre = scanner.nextLine();
+                    String[] animalesValidos = {"mono", "jirafa", "leon", "cocodrilo"};
          
-                    
+                    String tipo;
+                boolean tipoValido = false;
+                do {
                     System.out.println("Que tipo de animal es?");
                     System.out.println("Mono");
                     System.out.println("Jirafa");
                     System.out.println("Leon");
                     System.out.println("Cocodrilo");
-                    String tipo = scanner.nextLine();
+                    tipo = scanner.nextLine();
+                    
+                    for (String animal : animalesValidos) {
+                        int distancia = StringUtils.getLevenshteinDistance(tipo, animal);
+                        if (distancia <= 1) { // Permitir 1 error en el nombre
+                            tipoValido = true;
+                            tipo = animal; // Asignar el nombre correcto del animal
+                            break;
+                        }
+                    }
+
+                    if (!tipoValido) {
+                        System.out.println("Error, este tipo de animal no existe en nuestra base de datos... ingrese correctamente");
+                    }
+                } while (!tipoValido);
                     
                     System.out.println("Ingrese la fecha de nacimiento");
                     String fechaNac = scanner.nextLine();
@@ -61,12 +80,18 @@ public class ZooBenjas {
                     System.out.println("Ingrese la fecha de llegada");
                     String fechaLlega = scanner.nextLine();
                     
+                    
+
+                    
                     System.out.println("Que ambiente usa tu animal?");
+                    String[] ambientesValidos = {"jungla", "amazonas", "pantano", "antartica"};
+                    String ambiente;
+                    boolean ambienteValido = false;
                     System.out.println("Jungla");
                     System.out.println("Amazonas");
                     System.out.println("Pantano");
                     System.out.println("Antartica");
-                    String ambiente = scanner.nextLine();
+                    ambiente = scanner.nextLine();
                     
                     System.out.println("Que valor comercial tiene?");
                     int valorCo = scanner.nextInt();
