@@ -60,13 +60,13 @@ public class ZooBenjas {
         DAOTratamientos.agregarTratamiento(new Tratamientos(16, "Revision de plumaje", "14:30"));
 
         //Empleados por default
-        DAOEmpleado.agregarEmpleado(new Empleados("2020202", "Pedrito", "Parra", "Cayo", "2024-10-01", "08:00", "Mantenimiento de habitat"));
-        DAOEmpleado.agregarEmpleado(new Empleados("2134567", "Maria", "Gonzalez", "Rios", "2024-10-01", "09:00", "Revision medica de animales"));
-        DAOEmpleado.agregarEmpleado(new Empleados("3245678", "Carlos", "Jimenez", "Montes", "2024-10-01", "10:00", "Supervision de seguridad"));
-        DAOEmpleado.agregarEmpleado(new Empleados("4356789", "Ana", "Lopez", "Campos", "2024-10-01", "11:00", "Alimentacion de mamiferos"));
-        DAOEmpleado.agregarEmpleado(new Empleados("5467890", "Pedro", "Sanchez", "Valle", "2024-10-01", "12:00", "Inspeccion de habitat"));
-        DAOEmpleado.agregarEmpleado(new Empleados("6578901", "Marta", "Diaz", "Sierra", "2024-10-01", "13:00", "Limpieza general del recinto"));
-        DAOEmpleado.agregarEmpleado(new Empleados("7689012", "Lucia", "Fernandez", "Costa", "2024-10-01", "14:00", "Control de dietas"));
+        DAOEmpleado.agregarEmpleado(new Empleados(2020202, "Pedrito", "Parra", "Cayo", "2024-10-01", "08:00", "Mantenimiento de habitat"));
+        DAOEmpleado.agregarEmpleado(new Empleados(2134567, "Maria", "Gonzalez", "Rios", "2024-10-01", "09:00", "Revision medica de animales"));
+        DAOEmpleado.agregarEmpleado(new Empleados(3245678, "Carlos", "Jimenez", "Montes", "2024-10-01", "10:00", "Supervision de seguridad"));
+        DAOEmpleado.agregarEmpleado(new Empleados(4356789, "Ana", "Lopez", "Campos", "2024-10-01", "11:00", "Alimentacion de mamiferos"));
+        DAOEmpleado.agregarEmpleado(new Empleados(5467890, "Pedro", "Sanchez", "Valle", "2024-10-01", "12:00", "Inspeccion de habitat"));
+        DAOEmpleado.agregarEmpleado(new Empleados(6578901, "Marta", "Diaz", "Sierra", "2024-10-01", "13:00", "Limpieza general del recinto"));
+        DAOEmpleado.agregarEmpleado(new Empleados(7689012, "Lucia", "Fernandez", "Costa", "2024-10-01", "14:00", "Control de dietas"));
         
         //Atenciones de los animales
         DAOAtencion.agregarAtenciones(new Atenciones(1, "Limpiar Habitat", "Prioridad Media"));
@@ -269,7 +269,7 @@ public class ZooBenjas {
                         case 1:
 
                             System.out.println("Ingrese su rut sin puntos y sin digito verificador");
-                            String rut = scanner.nextLine();
+                            int rut = scanner.nextInt();
                             System.out.println("Ingrese su nombre");
                             String nombreEm = scanner.nextLine();
                             System.out.println("Ingrese su Apellido Paterno");

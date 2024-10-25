@@ -9,7 +9,7 @@ package com.mycompany.zoobenjas.cl.benjamin.MODELOS;
  * @author benja
  */
 public class Empleados {
-    private String Rut;
+    private int Rut;
     private String nombre;
     private String apemat;
     private String apepat;
@@ -17,11 +17,11 @@ public class Empleados {
     private String Hora;
     private String DescripcionRealizado;
 
-    public Empleados(String Rut) {
+    public Empleados(int Rut) {
         this.Rut = Rut;
     }
 
-    public Empleados(String Rut, String nombre, String apemat, String apepat, String fecha, String Hora, String DescripcionRealizado) {
+    public Empleados(int Rut, String nombre, String apemat, String apepat, String fecha, String Hora, String DescripcionRealizado) {
         this.Rut = Rut;
         this.nombre = nombre;
         this.apemat = apemat;
@@ -31,11 +31,11 @@ public class Empleados {
         this.DescripcionRealizado = DescripcionRealizado;
     }
 
-    public String getRut() {
+    public int getRut() {
         return Rut;
     }
 
-    public void setRut(String Rut) {
+    public void setRut(int Rut) {
         this.Rut = Rut;
     }
 
