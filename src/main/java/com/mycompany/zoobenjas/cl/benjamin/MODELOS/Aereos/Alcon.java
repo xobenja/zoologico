@@ -13,7 +13,7 @@ import java.time.LocalDate;
  */
 public class Alcon extends Animales {
     public Alcon(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
-        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Aéreo", valorComercial);
+        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Aereo", valorComercial);
     }
 
     

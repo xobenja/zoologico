@@ -11,7 +11,7 @@ import java.time.LocalDate;
  */
 public class Pinguino extends Animales{
     public Pinguino(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
-        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuático", valorComercial);
+        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuatico", valorComercial);
 
     }
 }

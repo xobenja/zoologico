@@ -13,7 +13,7 @@ import java.time.LocalDate;
  */
 public class Delfin extends Animales{
     public Delfin(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
-        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuático", valorComercial);
+        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuatico", valorComercial);
 
     }
 }

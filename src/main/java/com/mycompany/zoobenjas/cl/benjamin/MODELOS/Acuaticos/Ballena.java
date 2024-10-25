@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class Ballena extends Animales {
 
     public Ballena(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
-        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuático", valorComercial);
+        super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuatico", valorComercial);
 
     }
 }

@@ -42,29 +42,29 @@ public class ZooBenjas {
     public static void prueba1() {
         
         //Tratamiendo para animales
-        DAOTratamientos.agregarTratamiento(new Tratamientos(1, "Vacunación contra fiebre amarilla", "09:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(1, "Vacunacion contra fiebre amarilla", "09:00"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(2, "Chequeo de salud general", "10:00"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(3, "Control dental", "11:00"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(4, "Desparasitante", "12:00"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(5, "Examen de piel", "13:00"));
-        DAOTratamientos.agregarTratamiento(new Tratamientos(6, "Revisión de alimentación", "14:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(6, "Revision de alimentacion", "14:00"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(7, "Control de plumas", "15:00"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(8, "Chequeo de alas", "16:00"));
-        DAOTratamientos.agregarTratamiento(new Tratamientos(9, "Revisión de patas", "17:00"));
-        DAOTratamientos.agregarTratamiento(new Tratamientos(10, "Vacunación contra gripe aviar", "08:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(9, "Revision de patas", "17:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(10, "Vacunacion contra gripe aviar", "08:30"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(11, "Chequeo de salud", "09:30"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(12, "Control de peso", "10:30"));
-        DAOTratamientos.agregarTratamiento(new Tratamientos(13, "Revisión de dientes", "11:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(13, "Revision de dientes", "11:30"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(14, "Control de dieta", "12:30"));
         DAOTratamientos.agregarTratamiento(new Tratamientos(15, "Desparasitante", "13:30"));
-        DAOTratamientos.agregarTratamiento(new Tratamientos(16, "Revisión de plumaje", "14:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(16, "Revision de plumaje", "14:30"));
 
         //Empleados por default
-        DAOEmpleado.agregarEmpleado(new Empleados("2020202", "Pedrito", "Parra", "Cayo", "2024-10-01", "08:00", "Mantenimiento de hábitat"));
-        DAOEmpleado.agregarEmpleado(new Empleados("2134567", "Maria", "Gonzalez", "Rios", "2024-10-01", "09:00", "Revisión médica de animales"));
-        DAOEmpleado.agregarEmpleado(new Empleados("3245678", "Carlos", "Jimenez", "Montes", "2024-10-01", "10:00", "Supervisión de seguridad"));
-        DAOEmpleado.agregarEmpleado(new Empleados("4356789", "Ana", "Lopez", "Campos", "2024-10-01", "11:00", "Alimentación de mamíferos"));
-        DAOEmpleado.agregarEmpleado(new Empleados("5467890", "Pedro", "Sanchez", "Valle", "2024-10-01", "12:00", "Inspección de hábitat"));
+        DAOEmpleado.agregarEmpleado(new Empleados("2020202", "Pedrito", "Parra", "Cayo", "2024-10-01", "08:00", "Mantenimiento de habitat"));
+        DAOEmpleado.agregarEmpleado(new Empleados("2134567", "Maria", "Gonzalez", "Rios", "2024-10-01", "09:00", "Revision medica de animales"));
+        DAOEmpleado.agregarEmpleado(new Empleados("3245678", "Carlos", "Jimenez", "Montes", "2024-10-01", "10:00", "Supervision de seguridad"));
+        DAOEmpleado.agregarEmpleado(new Empleados("4356789", "Ana", "Lopez", "Campos", "2024-10-01", "11:00", "Alimentacion de mamiferos"));
+        DAOEmpleado.agregarEmpleado(new Empleados("5467890", "Pedro", "Sanchez", "Valle", "2024-10-01", "12:00", "Inspeccion de habitat"));
         DAOEmpleado.agregarEmpleado(new Empleados("6578901", "Marta", "Diaz", "Sierra", "2024-10-01", "13:00", "Limpieza general del recinto"));
         DAOEmpleado.agregarEmpleado(new Empleados("7689012", "Lucia", "Fernandez", "Costa", "2024-10-01", "14:00", "Control de dietas"));
         
@@ -85,7 +85,7 @@ public class ZooBenjas {
         DAOAnimales.agregarAnimal(new Foca(5, "Sammy", 120, LocalDate.of(2011, Month.SEPTEMBER, 15), LocalDate.of(2020, Month.OCTOBER, 20), 200000));
         DAOAnimales.agregarAnimal(new Pinguino(6, "Pingu", 25, LocalDate.of(2014, Month.NOVEMBER, 30), LocalDate.of(2023, Month.JANUARY, 10), 100000));
 
-        DAOAnimales.agregarAnimal(new Alcon(7, "Halcón", 40, LocalDate.of(2012, Month.APRIL, 5), LocalDate.of(2019, Month.DECEMBER, 15), 987654));
+        DAOAnimales.agregarAnimal(new Alcon(7, "Halcon", 40, LocalDate.of(2012, Month.APRIL, 5), LocalDate.of(2019, Month.DECEMBER, 15), 987654));
         DAOAnimales.agregarAnimal(new Condor(8, "Andes", 15, LocalDate.of(2009, Month.AUGUST, 20), LocalDate.of(2017, Month.JULY, 30), 1234567));
         DAOAnimales.agregarAnimal(new Loro(9, "Parlanchin", 10, LocalDate.of(2013, Month.MARCH, 12), LocalDate.of(2021, Month.FEBRUARY, 22), 987123));
         DAOAnimales.agregarAnimal(new Pelicano(10, "BigBeak", 30, LocalDate.of(2010, Month.OCTOBER, 5), LocalDate.of(2018, Month.APRIL, 19), 654321));
@@ -123,11 +123,11 @@ public class ZooBenjas {
                     String tipo;
                     boolean tipoValido = false;
                     do {
-                        System.out.println("Que tipo de animal es?");
-                        System.out.println("1 terrenal");
-                        System.out.println("Jirafa");
-                        System.out.println("Leon");
-                        System.out.println("Cocodrilo");
+                        System.out.println("Que tipo de animal es?(Escribalo)");
+                        System.out.println("1. Terrenal");
+                        System.out.println("2. Jirafa");
+                        System.out.println("3. Leon");
+                        System.out.println("4. Cocodrilo");
                         tipo = scanner.nextLine();
 
                         for (String animal : animalesValidos) {
@@ -150,22 +150,22 @@ public class ZooBenjas {
                     System.out.println("Ingrese la fecha de llegada");
                     String fechaLlega = scanner.nextLine();
 
-                    System.out.println("Que ambiente usa tu animal?");
+                    System.out.println("Que ambiente usa tu animal?(Escribalo)");
 
                     String[] ambientesValidos = {"jungla", "amazonas", "pantano", "antartica"};
                     String ambiente;
                     boolean ambienteValido = false;
                     do {
-                        System.out.println("Jungla");
-                        System.out.println("Amazonas");
-                        System.out.println("Pantano");
-                        System.out.println("Antartica");
+                        System.out.println("1. Jungla");
+                        System.out.println("2. Amazonas");
+                        System.out.println("3. Pantano");
+                        System.out.println("4. Antartica");
                         ambiente = scanner.nextLine();
-                        for (String animal : animalesValidos) {
-                            int distancia = StringUtils.getLevenshteinDistance(tipo, animal);
+                        for (String ambientee : ambientesValidos) {
+                            int distancia = StringUtils.getLevenshteinDistance(ambiente, ambientee);
                             if (distancia <= 1) {
                                 ambienteValido = true;
-                                tipo = animal;
+                                ambiente = ambientee;
                                 break;
                             }
                         }
@@ -228,7 +228,7 @@ public class ZooBenjas {
                     switch (opc) {
                         case 1:
                             if (DAOAnimales.lanimales.size() <= 0) {
-                                System.out.println("Aún no hay animales en el zoologico");
+                                System.out.println("Aun no hay animales en el zoologico");
                                 break;
                             } else {
                                 DAOAnimales.listarAnimales();
@@ -262,6 +262,7 @@ public class ZooBenjas {
                     System.out.println("Elija una opcion");
                     System.out.println("1. Agregar Servicio Realizado");
                     System.out.println("2. Ver Empleados");
+                    System.out.println("3. Salir");
                     int opcEmpleado = scanner.nextInt();
                     scanner.nextLine();
                     switch (opcEmpleado) {
@@ -290,6 +291,8 @@ public class ZooBenjas {
                             break;
                         default:
                             throw new AssertionError();
+                        case 3:
+                            break;
                     }
                     break;
                 case 7:
