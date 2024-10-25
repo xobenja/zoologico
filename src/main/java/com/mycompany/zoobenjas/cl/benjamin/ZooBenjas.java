@@ -40,7 +40,34 @@ public class ZooBenjas {
     }
 
     public static void prueba1() {
+        
+        //Tratamiendo para animales
+        DAOTratamientos.agregarTratamiento(new Tratamientos(1, "Vacunación contra fiebre amarilla", "09:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(2, "Chequeo de salud general", "10:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(3, "Control dental", "11:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(4, "Desparasitante", "12:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(5, "Examen de piel", "13:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(6, "Revisión de alimentación", "14:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(7, "Control de plumas", "15:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(8, "Chequeo de alas", "16:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(9, "Revisión de patas", "17:00"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(10, "Vacunación contra gripe aviar", "08:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(11, "Chequeo de salud", "09:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(12, "Control de peso", "10:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(13, "Revisión de dientes", "11:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(14, "Control de dieta", "12:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(15, "Desparasitante", "13:30"));
+        DAOTratamientos.agregarTratamiento(new Tratamientos(16, "Revisión de plumaje", "14:30"));
 
+        //Empleados por default
+        DAOEmpleado.agregarEmpleado(new Empleados("2020202", "Pedrito", "Parra", "Cayo", "2024-10-01", "08:00", "Mantenimiento de hábitat"));
+        DAOEmpleado.agregarEmpleado(new Empleados("2134567", "Maria", "Gonzalez", "Rios", "2024-10-01", "09:00", "Revisión médica de animales"));
+        DAOEmpleado.agregarEmpleado(new Empleados("3245678", "Carlos", "Jimenez", "Montes", "2024-10-01", "10:00", "Supervisión de seguridad"));
+        DAOEmpleado.agregarEmpleado(new Empleados("4356789", "Ana", "Lopez", "Campos", "2024-10-01", "11:00", "Alimentación de mamíferos"));
+        DAOEmpleado.agregarEmpleado(new Empleados("5467890", "Pedro", "Sanchez", "Valle", "2024-10-01", "12:00", "Inspección de hábitat"));
+        DAOEmpleado.agregarEmpleado(new Empleados("6578901", "Marta", "Diaz", "Sierra", "2024-10-01", "13:00", "Limpieza general del recinto"));
+        DAOEmpleado.agregarEmpleado(new Empleados("7689012", "Lucia", "Fernandez", "Costa", "2024-10-01", "14:00", "Control de dietas"));
+        
         //Atenciones de los animales
         DAOAtencion.agregarAtenciones(new Atenciones(1, "Limpiar Habitat", "Prioridad Media"));
         DAOAtencion.agregarAtenciones(new Atenciones(2, "Revision Medica", "Prioridad Alta"));
@@ -97,7 +124,7 @@ public class ZooBenjas {
                     boolean tipoValido = false;
                     do {
                         System.out.println("Que tipo de animal es?");
-                        System.out.println("Mono");
+                        System.out.println("1 terrenal");
                         System.out.println("Jirafa");
                         System.out.println("Leon");
                         System.out.println("Cocodrilo");
