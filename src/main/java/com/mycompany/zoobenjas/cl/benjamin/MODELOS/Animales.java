@@ -4,6 +4,7 @@
  */
 package com.mycompany.zoobenjas.cl.benjamin.MODELOS;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -15,8 +16,8 @@ public abstract class Animales {
     private int idAnimal;
     private String nombre;
     private double peso;
-    private Date fechaNacimiento;
-    private Date fechaLlegada;
+    private LocalDate fechaNacimiento;
+    private LocalDate fechaLlegada;
     private String clasificacionAmbiente; // Aéreo, Terrestre, Acuático
     private double valorComercial;
 
@@ -24,7 +25,7 @@ public abstract class Animales {
         this.idAnimal = idAnimal;
     }
 
-    public Animales(int idAnimal, String nombre, double peso, Date fechaNacimiento, Date fechaLlegada, String clasificacionAmbiente, double valorComercial) {
+    public Animales(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, String clasificacionAmbiente, double valorComercial) {
         this.idAnimal = idAnimal;
         this.nombre = nombre;
         this.peso = peso;
@@ -58,19 +59,19 @@ public abstract class Animales {
         this.peso = peso;
     }
 
-    public Date getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public Date getFechaLlegada() {
+    public LocalDate getFechaLlegada() {
         return fechaLlegada;
     }
 
-    public void setFechaLlegada(Date fechaLlegada) {
+    public void setFechaLlegada(LocalDate fechaLlegada) {
         this.fechaLlegada = fechaLlegada;
     }
 

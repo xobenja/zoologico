@@ -3,14 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.zoobenjas.cl.benjamin.MODELOS.Terrestres;
+
 import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Animales;
 import java.time.LocalDate;
+
 /**
  *
  * @author benja
  */
-public class Pavo_Real extends Animales {
-    public Pavo_Real (int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
+public class Mono extends Animales{
+    public Mono(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
         super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Terrestre", valorComercial);
     }
     

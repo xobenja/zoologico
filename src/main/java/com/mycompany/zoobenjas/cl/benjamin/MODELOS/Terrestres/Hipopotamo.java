@@ -4,13 +4,13 @@
  */
 package com.mycompany.zoobenjas.cl.benjamin.MODELOS.Terrestres;
 import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Animales;
-import java.util.Date;
+import java.time.LocalDate;
 /**
  *
  * @author benja
  */
 public class Hipopotamo extends Animales {
-    public Hipopotamo(int idAnimal, String nombre, double peso, Date fechaNacimiento, Date fechaLlegada, double valorComercial) {
+    public Hipopotamo(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
         super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Terrestre", valorComercial);
     }
     

@@ -4,13 +4,13 @@
  */
 package com.mycompany.zoobenjas.cl.benjamin.MODELOS.Acuaticos;
 import com.mycompany.zoobenjas.cl.benjamin.MODELOS.Animales;
-import java.util.Date;
+import java.time.LocalDate;
 /**
  *
  * @author benja
  */
 public class Pinguino extends Animales{
-    public Pinguino(int idAnimal, String nombre, double peso, Date fechaNacimiento, Date fechaLlegada, double valorComercial) {
+    public Pinguino(int idAnimal, String nombre, double peso, LocalDate fechaNacimiento, LocalDate fechaLlegada, double valorComercial) {
         super(idAnimal, nombre, peso, fechaNacimiento, fechaLlegada, "Acuático", valorComercial);
 
     }
