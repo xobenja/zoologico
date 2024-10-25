@@ -10,29 +10,27 @@ import java.util.Date;
  *
  * @author benja
  */
-public class Animales {
+public abstract class Animales {
+
     private int idAnimal;
     private String nombre;
-    private String tipoAnimal;  
-    private String fechaNacimiento;
-    private String fechaLlegada;
-    private String ambiente;  
+    private double peso;
+    private Date fechaNacimiento;
+    private Date fechaLlegada;
+    private String clasificacionAmbiente; // Aéreo, Terrestre, Acuático
     private double valorComercial;
 
     public Animales(int idAnimal) {
         this.idAnimal = idAnimal;
     }
 
-
-
-    
-    public Animales(int idAnimal, String nombre, String tipoAnimal, String fechaNacimiento, String fechaLlegada, String ambiente, double valorComercial) {
+    public Animales(int idAnimal, String nombre, double peso, Date fechaNacimiento, Date fechaLlegada, String clasificacionAmbiente, double valorComercial) {
         this.idAnimal = idAnimal;
         this.nombre = nombre;
-        this.tipoAnimal = tipoAnimal;
+        this.peso = peso;
         this.fechaNacimiento = fechaNacimiento;
         this.fechaLlegada = fechaLlegada;
-        this.ambiente = ambiente;
+        this.clasificacionAmbiente = clasificacionAmbiente;
         this.valorComercial = valorComercial;
     }
 
@@ -52,36 +50,36 @@ public class Animales {
         this.nombre = nombre;
     }
 
-    public String getTipoAnimal() {
-        return tipoAnimal;
+    public double getPeso() {
+        return peso;
     }
 
-    public void setTipoAnimal(String tipoAnimal) {
-        this.tipoAnimal = tipoAnimal;
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 
-    public String getFechaNacimiento() {
+    public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(String fechaNacimiento) {
+    public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String getFechaLlegada() {
+    public Date getFechaLlegada() {
         return fechaLlegada;
     }
 
-    public void setFechaLlegada(String fechaLlegada) {
+    public void setFechaLlegada(Date fechaLlegada) {
         this.fechaLlegada = fechaLlegada;
     }
 
-    public String getAmbiente() {
-        return ambiente;
+    public String getClasificacionAmbiente() {
+        return clasificacionAmbiente;
     }
 
-    public void setAmbiente(String ambiente) {
-        this.ambiente = ambiente;
+    public void setClasificacionAmbiente(String clasificacionAmbiente) {
+        this.clasificacionAmbiente = clasificacionAmbiente;
     }
 
     public double getValorComercial() {
@@ -92,14 +90,19 @@ public class Animales {
         this.valorComercial = valorComercial;
     }
 
+   
+
     @Override
     public String toString() {
-        return "Animales{" + "idAnimal=" + idAnimal + ", nombre=" + nombre + ", tipoAnimal=" + tipoAnimal + ", fechaNacimiento=" + fechaNacimiento + ", fechaLlegada=" + fechaLlegada + ", ambiente=" + ambiente + ", valorComercial=" + valorComercial + '}';
+        return "Animales{" + "idAnimal=" + idAnimal + ", nombre=" + nombre + ", peso=" + peso + ", fechaNacimiento=" + fechaNacimiento + ", fechaLlegada=" + fechaLlegada + ", clasificacionAmbiente=" + clasificacionAmbiente + ", valorComercial=" + valorComercial + '}';
     }
-
-   
     
     public void imprimir(){
         System.out.println(this.toString());
+    }
+    
+    public void mostrarInfo() {
+        System.out.println("ID: " + idAnimal + " | Nombre: " + nombre + " | Peso: " + peso + " kg | Nacimiento: " + fechaNacimiento + " | Llegada: " + fechaLlegada);
+        System.out.println("Clasificación: " + clasificacionAmbiente + " | Valor comercial: $" + valorComercial);
     }
 }

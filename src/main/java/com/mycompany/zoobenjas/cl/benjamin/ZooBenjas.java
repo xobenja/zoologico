@@ -31,6 +31,7 @@ public class ZooBenjas {
 
     public static void prueba2() {
 
+        //Atenciones de los animales
         DAOAtencion.agregarAtenciones(new Atenciones(1, "Limpiar Habitat", "Prioridad Media"));
         DAOAtencion.agregarAtenciones(new Atenciones(2, "Revision Medica", "Prioridad Alta"));
         DAOAtencion.agregarAtenciones(new Atenciones(3, "Alimentar Animal", "Prioridad Alta"));
@@ -38,7 +39,15 @@ public class ZooBenjas {
         DAOAtencion.agregarAtenciones(new Atenciones(5, "Inspeccion de Seguridad", "Prioridad Alta"));
         DAOAtencion.agregarAtenciones(new Atenciones(6, "Chequeo Dental", "Prioridad Normal"));
         DAOAtencion.agregarAtenciones(new Atenciones(7, "Control de Parasitos", "Prioridad Alta"));
-
+        
+        
+        //Animales por default
+        DAOAnimales.agregarAnimal(new Animales(1, "Pepe", "Mono", "29/10/2000", "01/2/2002", "Jungla", 1000000));
+        DAOAnimales.agregarAnimal(new Animales(2, "Juan", "", "29/10/2000", "01/2/2002", "Jungla", 1000000));
+        
+        
+        
+        
         Scanner scanner = new Scanner(System.in);
         int opcion;
         do {
